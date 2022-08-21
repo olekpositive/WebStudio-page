@@ -1,0 +1,26 @@
+.navigation-div {
+    width: 1600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.4);
+    background-image: url(../../images/background-image.jpg);
+    box-shadow: inset 50px 50px 50px 50px rgb(47 48 58 / 40%),
+        inset 1600px 600px 50px 50px rgb(47 48 58 / 40%);
+
+    &__name-style {
+        width: 696px;
+        height: 120px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.363em;
+        letter-spacing: 0.06em;
+        color: var(--FFF);
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

@@ -1,0 +1,43 @@
+.lorem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+    }
+
+    &__icon--bg {
+        background: #F5F4FA;
+    }
+
+    &__name {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142em;
+        letter-spacing: 0.03em;
+        padding-top: 30px;
+    }
+
+    &__text {
+        width: 270px;
+        height: 75px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714em;
+        letter-spacing: 0.03em;
+        color: var(--grey);
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+}

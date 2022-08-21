@@ -1,0 +1,13 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--bg {
+        background-color: var(--dark);
+    }
+
+    &-position {
+        display: flex;
+        gap: 70px;
+    }
+}

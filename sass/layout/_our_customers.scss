@@ -1,0 +1,46 @@
+.our-customers {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166em;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.box-our-customers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 50px 0 0 0;
+    gap: 30px;
+
+    &__logo {
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__logo:hover,
+    &__logo:focus {
+        border: 1px solid #2196F3;
+    }
+
+    &__logo:hover .icon,
+    &__logo:focus .icon {
+        fill: var(--blue);
+    }
+}
+
+.icon-customers {
+    fill: var(--icon);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

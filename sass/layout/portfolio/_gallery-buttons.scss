@@ -1,0 +1,31 @@
+.gallery-buttons {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+
+    &__portfolio {
+        background: #F5F4FA;
+        border-radius: 4px;
+        border: 0;
+        cursor: pointer;
+        padding: 6px 22px 6px 22px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625em;
+        letter-spacing: 0.03em;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__portfolio:hover,
+    &__portfolio:focus {
+        background: #2196F3;
+        color: var(--FFF);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        outline: none;
+    }
+}

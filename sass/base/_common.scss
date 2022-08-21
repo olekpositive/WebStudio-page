@@ -1,0 +1,51 @@
+:root {
+    --dark: #2f303a;
+    --grey: #757575;
+    --FFF: #FFF;
+    --blue: #2196F3;
+    --black: #212121;
+    --button: #F5F4FA;
+    --line: #ECECEC;
+    --icon: #AFB1B8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--FFF);
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a:focus,
+a:hover {
+    color: var(--blue);
+
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 270;
+    height: 220;
+}
+
+.icon {
+    display: inline-block;
+    /* width: 1em;
+    height: 1em; */
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}

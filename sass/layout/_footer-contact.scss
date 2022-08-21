@@ -1,0 +1,38 @@
+.footer-contact {
+    display: table-row;
+    margin: 0;
+    padding: 0;
+
+    &__padding {
+        padding-top: 20px;
+    }
+
+    &__padding1 {
+        padding-top: 9px;
+    }
+
+    &__adres {
+        text-decoration: none;
+        color: var(--FFF);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.174em;
+        letter-spacing: 0.03em;
+        line-height: 24px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__mail-tel {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.174em;
+        letter-spacing: 0.02em;
+        color: #FFFFFF99;
+        text-decoration: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

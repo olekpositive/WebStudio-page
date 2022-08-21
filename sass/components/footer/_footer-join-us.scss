@@ -1,0 +1,40 @@
+.footer-join-us {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--FFF);
+    padding: 12px 0px 20px 0;
+
+    &__icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__box {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__box:hover,
+    &__box:focus {
+        background: var(--blue);
+    }
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+    fill: var(--FFF);
+}
