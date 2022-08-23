@@ -3,16 +3,25 @@
     padding-bottom: 94px;
 }
  */
+
+@media screen and (max-width: 479px) {
+        .section {
+            padding-top: 60px;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+    }
+
    @media screen and (min-width: 480px) {
        .section {
             padding-top: 60px;
-            padding-bottom: 60px;
+            padding-bottom: 30px;
             margin: 0;
        }
    }
 
    @media screen and (min-width: 768px) {
-    .section {
+        .section {
             padding-top: 60px;
             padding-bottom: 60px;
             margin: 0;
@@ -20,10 +29,9 @@
    }
 
    @media screen and (min-width: 1200px) {
-    .section {
+        .section {
             padding-top: 94px;
             padding-bottom: 94px;
-
+            margin: 0;
        }
-
    }
