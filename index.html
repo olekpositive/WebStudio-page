@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;708&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css/main.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
 
 
 </head>
@@ -28,13 +28,13 @@
                 <p class="logo__first-word">Web<span class="logo__second-word">Studio</span></p>
             </a>
             <nav>
-                <ul class="header__nav">
+                <ul class="header__nav menu">
                     <li><a class="header__nav-style header__nav-underline-permanently header__nav-active" href="index.html">Agencja</a></li>
                     <li><a class="header__nav-style header__nav-underline-hover" href="portfolio.html">Portfolio</a></li>
                     <li><a class="header__nav-style header__nav-underline-hover" href="#footer">Kontakt</a></li>
                 </ul>
             </nav>
-            <ul class="header__contact">
+            <ul class="header__contact menu">
                 <li>
                     <a class="header__contact-color" href="mailto:info@devstudio.com">
                         <svg class="icon" width="16" height="12">
@@ -50,6 +50,13 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -114,7 +121,7 @@
             </div>
         </section>
         <!-- ------------- lorem ------------ -->
-        <section class="section">
+       <!--  <section class="section">
             <div class="container">
                 <ul class="lorem">
                     <li>
@@ -171,7 +178,7 @@
                     </li>
                 </ul>
                 <!-- Czym się zajmujemy -->
-                <h2 class="what-we-do">Czym się zajmujemy</h2>
+                <!-- <h2 class="what-we-do">Czym się zajmujemy</h2>
                 <ul class="box-what-we-do">
                     <li class="box-what-we-do__z-index-image">
                         <figure class="box-what-we-do__figure"><img src="images/img1.jpg" alt="working-desk-office" />
@@ -192,9 +199,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Nasz zespół -->
-        <section class="section section--bg">
+       <!--  <section class="section section--bg">
             <div class="container">
                 <h2 class="our-team">Nasz zespół</h2>
                 <ul class="box-our-team">
@@ -339,9 +346,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Nasi klienci -->
-        <section class="section">
+       <!--  <section class="section">
             <div class="container">
                 <h2 class="our-customers">Nasi klienci</h2>
                 <ul class="box-our-customers">
@@ -389,10 +396,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <footer class="footer footer--bg" id="footer">
+  <!--   <footer class="footer footer--bg" id="footer">
         <div class="footer-position container">
             <section>
                     <a class="logo" href="index.html">
@@ -461,7 +468,29 @@
                 </form>                    
             </section>
         </div>
-    </footer>
+    </footer> -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+    </div>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./mobile-menu.js"></script>
 
     <script src="./modal.js"></script>
 </body>
