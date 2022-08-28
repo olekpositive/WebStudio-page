@@ -1,5 +1,5 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-Adding methodology BEM and preprocessor SASS:
+Added adaptation stylization for mobile and tablet and desktop:
 
-https://olekpositive.github.io/repozytorium-test/
+https://olekpositive.github.io/goit-markup-hw-08/
