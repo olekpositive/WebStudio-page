@@ -111,6 +111,7 @@ textarea::placeholder {
         background: #FFFFFF;
         cursor: pointer;
         padding: 6px 0 6px 0;
+        color: var(--black);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -178,6 +179,7 @@ textarea::placeholder {
     }
 
     &__form-policy:checked + &__form-policy-text::before {
+        color: var(--FFF);
         background-color: var(--blue);
         background-image: url(../../images/Vector.svg);
         background-repeat: no-repeat;

@@ -33,13 +33,6 @@ a:hover {
   color: var(--blue);
 }
 
-figure {
-  margin: 0;
-  padding: 0;
-  width: 270;
-  height: 220;
-}
-
 .icon {
   display: inline-block;
   stroke-width: 0;
@@ -591,6 +584,7 @@ figure {
 }
 .gallery-buttons__portfolio {
   background: #F5F4FA;
+  color: var(--black);
   border-radius: 4px;
   border: 0;
   width: 100%;
@@ -647,7 +641,8 @@ figure {
   background: var(--FFF);
 }
 .gallery-box__item figure {
-  height: auto;
+  margin: 0;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .gallery-box__item {
@@ -701,7 +696,6 @@ figure {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
   letter-spacing: 0.03em;
   color: #FFFFFF;
   padding: 49px 44px 48px 24px;

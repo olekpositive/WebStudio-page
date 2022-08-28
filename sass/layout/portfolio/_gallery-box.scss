@@ -17,7 +17,8 @@
     &__item {
         background: var(--FFF);
         figure {
-            height: auto;
+            margin: 0;
+            padding: 0;
         }
         
         @media  (max-width: 767px) {
@@ -29,8 +30,7 @@
             }
     
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            flex-basis: calc((50% - 50px) / 2);
-           
+            flex-basis: calc((50% - 50px) / 2);  
             img {
                 width: 354px;
                 height: 294px;   
@@ -38,8 +38,7 @@
         }
         @media screen and (min-width: 1200px) {
             flex-direction: column;
-           
-           
+
         }
     }
 
@@ -76,7 +75,6 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        /* or 156% */
         letter-spacing: 0.03em;
         color: #FFFFFF;
         padding: 49px 44px 48px 24px;
