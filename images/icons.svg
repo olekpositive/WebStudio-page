@@ -165,6 +165,9 @@
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.264 15.206l-0.221-0.211-0.221 0.208-3.085 2.925 0.243 0.234 11.411 10.882 0.221-0.211 24.261-23.144-0.243-0.23-3.044-2.903-0.221 0.211-20.974 19.992-8.127-7.752z"></path>
 </symbol>
 
+<symbol id="icon-menu_toggle" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 
 </defs>
 </svg>

@@ -2,15 +2,23 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    padding: 0;
     gap: 8px;
-    padding: 0 15px;
-
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+            
+        }
+    @media screen and (min-width: 768px)  and (max-width: 1199px) {
+        margin: 0 46px 0 47px;
+    }
     &__portfolio {
         background: #F5F4FA;
         border-radius: 4px;
         border: 0;
+        width: 100%;
         cursor: pointer;
-        padding: 6px 22px 6px 22px;
+        padding: 6px 0 6px 0;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -19,6 +27,17 @@
         letter-spacing: 0.03em;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+            padding: 6px 22px 6px 22px;
+           
+        }
+    }
+
+    &__style {
+        @media screen and (max-width: 1199px) {
+        flex-basis: calc((100% - 16px) / 3);
+        }
+       
     }
 
     &__portfolio:hover,

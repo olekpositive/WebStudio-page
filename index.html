@@ -22,13 +22,13 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__position container">
-            <a class="logo" href="index.html">
-                <p class="logo__first-word">Web<span class="logo__second-word">Studio</span></p>
-            </a>
+    <header class="header container">
+        <a class="header__logo" href="index.html">
+            <p class="header__logo-first-word">Web<span class="header__logo-second-word">Studio</span></p>
+        </a>
+        <div class="header__position"> 
             <nav>
-                <ul class="header__nav menu">
+                <ul class="header__nav menu" id="wrapper">
                     <li><a class="header__nav-style header__nav-underline-permanently header__nav-active" href="index.html">Agencja</a></li>
                     <li><a class="header__nav-style header__nav-underline-hover" href="portfolio.html">Portfolio</a></li>
                     <li><a class="header__nav-style header__nav-underline-hover" href="#footer">Kontakt</a></li>
@@ -51,47 +51,51 @@
                 </li>
             </ul>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
+                <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_toggle" ></use>
                 </svg>
             </button>
-            <div class="menu-container js-menu-container" id="mobile-menu">
-                <button class="menu-toggle js-close-menu">
-                    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            
-                <ul class="mobile-menu">
-                    <li><a href="" class="link">About</a></li>
-                    <li><a href="" class="link">Products</a></li>
-                    <li><a href="" class="link">Contacts</a></li>
-                    <li><a href="" class="link">Career</a></li>
-                </ul>
-            </div>
+        </div>  
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu">
+                <li><a class="mobile-menu__nav-style" href="index.html">Agencja</a></li>
+                <li><a class="mobile-menu__nav-style " href="portfolio.html">Portfolio</a></li>
+                <li><a class="mobile-menu__nav-style " href="#footer">Kontakt</a></li>           
+            </ul>
+            <ul class="mobile-contact">
+                <li><a class="mobile-contact__number" href="tel:+48111111111">+48 111 111 111</a></li>
+                <li><a class="mobile-contact__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-social-network">
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Instagram</a></li>
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Twitter</a></li>
+                <li><a class="mobile-social-network__style mobile-social-network__border-right" href="#">Facebook</a></li>
+                <li><a class="mobile-social-network__style" href="#">LinkedIn</a></li>
+            </ul>
         </div>
     </header>
-
-    <!-- EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU----- -->
-
+    <!-- EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU -->
     <main>
         <section>
             <div class="navigation-div container">
-                <h1 class="navigation-div__name-style">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                <button type="button" data-modal-open class="button button--bg">Zamów usługe</button>
-                <div class="backdrop is-hidden" data-modal>
+                <div class="navigation-div__title-wrapper container">
+                    <h1 class="navigation-div__name-style">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+                    <button type="button" data-modal-open class="navigation-div__button navigation-div__button--bg">Zamów usługe</button>
+                </div>
+                <div class="backdrop is-hidden " data-modal>
                     <div class="modal">
                             <button type="button" class="modal__close-btn" data-modal-close>
                                 <svg class="icon icon-close-black" width="18" height="18">
                                     <use href="./images/icons.svg#icon-close-black"></use>
                                 </svg>
                             </button>
-                            <form>
-                            <label class="modal__style-header modal__position-header">
+                        <form class="modal__container">
+                            <label class="modal__style-header">
                                 Zostaw swoje dane w formularzu poniżej
                             </label>
                             <label class="modal__position-blocks">
@@ -194,7 +198,7 @@
                     </li>
                 </ul>
                 <!-- Czym się zajmujemy -->
-               <!--  <h2 class="what-we-do">Czym się zajmujemy</h2>
+                <h2 class="what-we-do">Czym się zajmujemy</h2>
                 <ul class="box-what-we-do">
                     <li class="box-what-we-do__z-index-image">
                         <figure class="box-what-we-do__figure"><img src="images/img1.jpg" alt="working-desk-office" />
@@ -214,15 +218,15 @@
                         </figure>
                     </li>
                 </ul>
-            </div> -->
+            </div> 
         </section> 
         <!-- Nasz zespół -->
         <section class="section section--bg">
             <div class="container">
                 <h2 class="our-team">Nasz zespół</h2>
                 <ul class="box-our-team">
-                    <li class="box-our-team__person">
-                        <img src="images/imgJD1.jpg" alt="Product Designer"/>
+                    <li class="box-our-team__person">              
+                        <img src="images/image-team/imgJD1-mobile.jpg" alt="Product Designer">
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Product Designer</p>
                         <ul class="box-our-team__icon">
@@ -257,7 +261,7 @@
                         </ul>
                     </li>
                     <li class="box-our-team__person">
-                        <img src="images/imgJD2.jpg" alt="Frontend Developer" />
+                        <img src="images/image-team/imgJD2-mobile.jpg" alt="Frontend Developer" />
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Frontend Developer</p>
                         <ul class="box-our-team__icon">
@@ -292,10 +296,10 @@
                         </ul>
                     </li>
                     <li class="box-our-team__person">
-                        <img src="images/imgJD3.jpg" alt="Marketing" />
+                        <img src="images/image-team/imgJD3-mobile.jpg" alt="Marketing" />
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Marketing</p>
-                        <ul class="box-our-team__icon">
+                            <ul class="box-our-team__icon">
                                 <li>
                                     <a class="box-our-team__icon-contact" href="#">
                                         <svg class="icon icon-team" width="20" height="20">
@@ -326,7 +330,7 @@
                                 </li>
                             </ul>
                     <li class="box-our-team__person">
-                        <img src="images/imgJD4.jpg" alt="UI Designer" />
+                        <img src="images/image-team/imgJD4-mobile.jpg" alt="UI Designer" />
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">UI Designer</p>
                             <ul class="box-our-team__icon">
@@ -362,48 +366,48 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
         <!-- Nasi klienci -->
         <section class="section">
             <div class="container">
                 <h2 class="our-customers">Nasi klienci</h2>
                 <ul class="box-our-customers">
-                    <li>
+                    <li class="box-our-customers__style">
                         <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="box-our-customers__style">
                         <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="box-our-customers__style">
                          <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="box-our-customers__style">
                          <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="box-our-customers__style">
                          <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo5"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="box-our-customers__style">
                          <a class="box-our-customers__logo" href="#">
                             <svg class="icon icon-customers" width="106" height="60">
                                 <use href="./images/icons.svg#icon-logo6"></use>
@@ -412,21 +416,20 @@
                     </li>
                 </ul>
             </div>
-        </section> 
+        </section>
     </main>
 
-   <footer class="footer footer--bg" id="footer">
+    <footer class="footer footer--bg" id="footer">
         <div class="footer-position container">
             <section>
-                    <a class="logo" href="index.html">
-                        <span class="logo__first-word">Web</span><span class="logo__third-word">Studio</span>
+                    <a class="footer__logo" href="index.html">
+                        <span class="footer__logo-first-word">Web</span><span class="footer__logo-second-word">Studio</span>
                     </a>
                 <address>
                     <ul class="footer-contact">
                         <li class="footer-contact__padding"><a class="footer-contact__adres"
-                                href="https://www.google.com/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/data=!4m2!3m1!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437?sa=X&ved=2ahUKEwiMytniuOL4AhVDAxAIHbNWDUIQ8gF6BAgDEAE">m.
-                                Warszawa,
-                                Aleje Jerozolimskie 21</a></li>
+                                href="https://www.google.com/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa/data=!4m2!3m1!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437?sa=X&ved=2ahUKEwiMytniuOL4AhVDAxAIHbNWDUIQ8gF6BAgDEAE">
+                                m. Warszawa, Aleje Jerozolimskie 21</a></li>
                         <li class="footer-contact__padding1"><a class="footer-contact__mail-tel"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
@@ -471,12 +474,12 @@
             </section>
             <section>
                 <h3 class="footer-join-us">ZAPISZ SIĘ DO NEWSLETTERA</h3>                           
-                <form class="footer-newsletter">         
+                <form class="footer-join-us-newsletter">         
                     <label>                          
-                        <input class="footer-newsletter__style footer-newsletter__style--bg" type="email" name="email" placeholder="E-mail" required
+                        <input class="footer-join-us-newsletter__style footer-join-us-newsletter__style--bg" type="email" name="email" placeholder="E-mail" required
                         style="padding: 15px 295px 15px 16px" />    
                     </label>  
-                    <button class="footer-newsletter__button footer-newsletter__button--bg" type="submit">Zapisz się
+                    <button class="footer-join-us-newsletter__button footer-join-us-newsletter__button--bg" type="submit">Zapisz się
                         <svg class="icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-newsletter"></use>
                         </svg>
@@ -484,7 +487,7 @@
                 </form>                    
             </section>
         </div>
-    </footer> 
+    </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

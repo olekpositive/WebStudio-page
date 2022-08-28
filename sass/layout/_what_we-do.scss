@@ -6,16 +6,22 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-top: 94px;
+    @media (max-width: 1199px) {
+        display: none;
+    } 
 }
 
-.box-what-we-do {
+.box-what-we-do { 
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 50px 0 0 0;
     gap: 30px;
-
+    @media (max-width: 1199px) {
+        display: none;
+    }
+    
     &__z-index-image {
         z-index: -1;
     }
@@ -29,7 +35,7 @@
         position: absolute;
         width: 370px;
         height: 70px;
-        top: 1425px;
+        top: 1432px;
         display: flex;
         justify-content: center;
         align-items: center;
