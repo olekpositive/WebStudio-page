@@ -1,4 +1,4 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
 Added adaptation stylization for mobile and tablet and desktop:
 
