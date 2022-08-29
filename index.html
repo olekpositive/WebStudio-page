@@ -201,19 +201,20 @@
                 <h2 class="what-we-do">Czym się zajmujemy</h2>
                 <ul class="box-what-we-do">
                     <li class="box-what-we-do__z-index-image">
-                        <figure class="box-what-we-do__figure"><img src="images/img1.jpg" alt="working-desk-office" />
+                        <figure class="box-what-we-do__figure"> 
+                            <img srcset="images/images-what-we-do/img1.jpg@2x.jpg 2x" src="images/images-what-we-do/img1.jpg" alt="working-desk-office" />  
                             <figcaption class="box-what-we-do__text box-what-we-do__text--style">Aplikacje komputerowe</figcaption>
                         </figure>
                     </li>
                     <li class="box-what-we-do__z-index-image">
-                        <figure class="box-what-we-do__figure"><img src="images/img2.jpg"
-                                alt="developing-application-smartphones-team-creators-is-working-interface-mobile-phones" />
+                        <figure class="box-what-we-do__figure">
+                            <img srcset="images/images-what-we-do/img2.jpg@2x.jpg 2x" src="images/images-what-we-do/img2.jpg" alt="developing-application-smartphones-team-creators-is-working-interface-mobile-phones" />
                             <figcaption class="box-what-we-do__text box-what-we-do__text--style">Aplikacje mobilne</figcaption>
                         </figure>
                     </li>
                     <li class="box-what-we-do__z-index-image">
-                        <figure class="box-what-we-do__figure"><img src="images/img3.jpg"
-                                alt="web-design-with-working-colour-selection-graphic-tablet" />
+                        <figure class="box-what-we-do__figure">
+                            <img srcset="images/images-what-we-do/img3.jpg@2x.jpg 2x" src="images/images-what-we-do/img3.jpg" alt="web-design-with-working-colour-selection-graphic-tablet" />
                             <figcaption class="box-what-we-do__text box-what-we-do__text--style">Rozwiązania graficzne</figcaption>
                         </figure>
                     </li>
@@ -225,8 +226,12 @@
             <div class="container">
                 <h2 class="our-team">Nasz zespół</h2>
                 <ul class="box-our-team">
-                    <li class="box-our-team__person">              
-                        <img src="images/image-team/imgJD1-mobile.jpg" alt="Product Designer">
+                    <li class="box-our-team__person"> 
+                        <picture>
+                            <source srcset="images/images-team/imgJD1-tablet.jpg, images/images-team/imgJD1-tablet@2x.jpg 2x" media="(min-width: 768px)">     
+                            <source srcset="images/images-team/imgJD1-desktop.jpg, images/images-team/imgJD1-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img srcset="images/images-team/imgJD1-mobile@2x.jpg 2x" src="images/images-team/imgJD1-mobile.jpg"  alt="Product Designer">
+                        </picture>
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Product Designer</p>
                         <ul class="box-our-team__icon">
@@ -261,7 +266,11 @@
                         </ul>
                     </li>
                     <li class="box-our-team__person">
-                        <img src="images/image-team/imgJD2-mobile.jpg" alt="Frontend Developer" />
+                        <picture>
+                            <source srcset="images/images-team/imgJD2-tablet.jpg, images/images-team/imgJD2-mobile@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="images/images-team/imgJD2-desktop.jpg, images/images-team/imgJD2-mobile@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img srcset="images/images-team/imgJD2-mobile@2x.jpg 2x" src="images/images-team/imgJD2-mobile.jpg" alt="Frontend Developer">
+                        </picture>
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Frontend Developer</p>
                         <ul class="box-our-team__icon">
@@ -296,7 +305,11 @@
                         </ul>
                     </li>
                     <li class="box-our-team__person">
-                        <img src="images/image-team/imgJD3-mobile.jpg" alt="Marketing" />
+                        <picture>
+                            <source srcset="images/images-team/imgJD3-tablet.jpg, images/images-team/imgJD3-mobile@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="images/images-team/imgJD3-desktop.jpg, images/images-team/imgJD3-mobile@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img srcset="images/images-team/imgJD3-mobile@2x.jpg 2x" src="images/images-team/imgJD3-mobile.jpg" alt="Marketing">
+                        </picture>
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">Marketing</p>
                             <ul class="box-our-team__icon">
@@ -330,7 +343,11 @@
                                 </li>
                             </ul>
                     <li class="box-our-team__person">
-                        <img src="images/image-team/imgJD4-mobile.jpg" alt="UI Designer" />
+                        <picture>
+                            <source srcset="images/images-team/imgJD4-tablet.jpg, images/images-team/imgJD4-mobile@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="images/images-team/imgJD4-desktop.jpg, images/images-team/imgJD4-mobile@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img srcset="images/images-team/imgJD4-mobile@2x.jpg 2x" src="images/images-team/imgJD4-mobile.jpg" alt="UI Designer">
+                        </picture>
                         <h3 class="box-our-team__name-person">John Doe</h3>
                         <p class="box-our-team__description-person">UI Designer</p>
                             <ul class="box-our-team__icon">

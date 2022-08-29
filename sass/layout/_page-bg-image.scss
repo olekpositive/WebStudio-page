@@ -1,6 +1,7 @@
  .navigation-div {
     width: 100%;
     height: 400px;
+   
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -14,7 +15,12 @@
         background-image: url(../images/image-main-bg/image-bg-mobile.jpg); 
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/image-main-bg/image-bg-mobile@2x.jpg);
+            }
         &__title-wrapper {          
             color: var(--FFF);  
             max-width: 400px;
@@ -60,6 +66,12 @@
         background-image: url(../images/image-main-bg/image-bg-tablet.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/image-main-bg/image-bg-tablet@2x.jpg);
+            }
+
         &__title-wrapper {
             color: var(--FFF);
             max-width: 400px;        
@@ -80,6 +92,12 @@
         height: 600px; 
         background-image: url(../images/image-main-bg/image-bg-desktop.jpg); 
         
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: url(../images/image-main-bg/image-bg-desktop@2x.jpg);
+            }
+
         &__title-wrapper {
             color: var(--FFF);
             width: 696px;

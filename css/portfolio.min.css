@@ -125,7 +125,7 @@ a:hover {
   outline: none;
   color: var(--black);
 }
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .header .menu-toggle {
     display: none;
   }
@@ -246,7 +246,7 @@ a:hover {
   text-decoration: none;
   margin-right: 93px;
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .header__logo {
     font-size: 24px;
   }

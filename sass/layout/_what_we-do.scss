@@ -6,7 +6,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-top: 94px;
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     } 
 }
@@ -18,7 +18,7 @@
     margin: 0;
     padding: 50px 0 0 0;
     gap: 30px;
-    @media (max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
     
@@ -29,6 +29,7 @@
     &__figure {
         width: 370px;
         height: 294px;
+        margin: 0;
     }
 
     &__text {

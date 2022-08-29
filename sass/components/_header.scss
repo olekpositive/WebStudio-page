@@ -47,7 +47,7 @@
         border: none;
         outline: none;
         color: var(--black);
-        @media (min-width: 767px) {       
+        @media screen and (min-width: 767px) {       
                 display: none;
             }
     }
@@ -122,35 +122,33 @@
         gap: 32px;
         padding: 302px 0 0 0;
         margin: 0;    
+   
+        &__number {
+            border-top: 302px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.176;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            color: var(--blue);
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__mail {
+            color: var(--grey);
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.166;
+            letter-spacing: 0.02em;
+        
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
-
-    .mobile-contact__number {
-        border-top: 302px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.176;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: var(--blue);
-
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .mobile-contact__mail {
-        color: var(--grey);
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.166;
-        letter-spacing: 0.02em;
-       
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     .mobile-social-network {
         display: flex;
         flex-wrap: wrap;
@@ -162,20 +160,18 @@
         font-size: 18px;
         line-height: 1.222;
         letter-spacing: 0.02em;
-        
-    }
 
-    .mobile-social-network__style {
-        text-decoration: none;
-        color: var(--blue); 
-    }
+        &__style {
+            text-decoration: none;
+            color: var(--blue); 
+        }
 
-    .mobile-social-network__border-right {
-        display: inline-block;
-        padding-right: 10px;       
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        &__border-right {
+            display: inline-block;
+            padding-right: 10px;       
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
     }
-
     &__logo {
         font-family: 'Raleway';
         font-style: normal;
@@ -185,7 +181,7 @@
         letter-spacing: 0.03em;
         text-decoration: none;
         margin-right: 93px;
-        @media (max-width: 1199px) {
+        @media screen and (max-width: 1199px) {
             font-size: 24px;
         }
     }
