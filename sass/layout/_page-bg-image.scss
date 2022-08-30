@@ -12,14 +12,14 @@
             inset 1600px 600px 50px 50px rgb(47 48 58 / 40%);
     @media screen and (max-width: 767px) {
     
-        background-image: url(../images/image-main-bg/image-bg-mobile.jpg); 
+        background-image: url(../../images/image-main-bg/image-bg-mobile.jpg); 
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url(../images/image-main-bg/image-bg-mobile@2x.jpg);
+                background-image: url(../../images/image-main-bg/image-bg-mobile@2x.jpg);
             }
         &__title-wrapper {          
             color: var(--FFF);  
@@ -63,13 +63,13 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .navigation-div {
-        background-image: url(../images/image-main-bg/image-bg-tablet.jpg);
+        background-image: url(../../images/image-main-bg/image-bg-tablet.jpg);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url(../images/image-main-bg/image-bg-tablet@2x.jpg);
+                background-image: url(../../images/image-main-bg/image-bg-tablet@2x.jpg);
             }
 
         &__title-wrapper {
@@ -90,12 +90,12 @@
     .navigation-div {
         max-width: 1600px;
         height: 600px; 
-        background-image: url(../images/image-main-bg/image-bg-desktop.jpg); 
+        background-image: url(../../images/image-main-bg/image-bg-desktop.jpg); 
         
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url(../images/image-main-bg/image-bg-desktop@2x.jpg);
+                background-image: url(../../images/image-main-bg/image-bg-desktop@2x.jpg);
             }
 
         &__title-wrapper {
