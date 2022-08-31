@@ -19,9 +19,13 @@
         figure {
             margin: 0;
             padding: 0;
+            height: 294px;
+            @media screen and (max-width: 767px) {
+                    height: auto;
+                }
         }
         
-        @media  (max-width: 767px) {
+        @media screen and (max-width: 767px) {
                 width: 100%;       
             }      
             img {
@@ -32,13 +36,11 @@
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             flex-basis: calc((50% - 50px) / 2);  
             img {
-                width: 354px;
-                height: 294px;   
+                width: 354px;  
             }
         }
         @media screen and (min-width: 1200px) {
             flex-direction: column;
-
         }
     }
 
@@ -80,6 +82,12 @@
         padding: 49px 44px 48px 24px;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (max-width: 767px) {
+            padding: 30px 24px 30px 24px;
+            }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 49px 24px 49px 24px;
+        }
     }
 
     &__first-description {
@@ -87,7 +95,7 @@
         font-size: 18px;
         line-height: 2em;
         letter-spacing: 0.06em;
-        padding: 20px 24px 0px 24px;
+        padding: 20px 10px 0px 24px;
         margin: 0;
         border-left: 1px solid rgb(238, 238, 238);
         border-right: 1px solid rgb(238, 238, 238);
@@ -99,7 +107,7 @@
         line-height: 1.875em;
         letter-spacing: 0.03em;
         color: var(--grey);
-        padding: 4px 24px 20px 24px;
+        padding: 4px 10px 20px 24px;
         margin: 0;
         border-left: 1px solid rgb(238, 238, 238);
         border-right: 1px solid rgb(238, 238, 238);
