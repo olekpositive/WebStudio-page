@@ -57,13 +57,12 @@
     &__style:hover,
     &__style:focus  {
         border: 1px solid #2196F3;
-        height: 92px;
+    
     }
 
     &__style:hover .icon,
     &__style:focus  .icon {
-        fill: var(--blue);
-        height: 92px;
+        fill: var(--blue);  
     }
 }
 

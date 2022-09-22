@@ -329,7 +329,6 @@ picture {
     color: var(--grey);
     text-decoration: none;
     display: flex;
-    align-items: center;
     gap: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1232,11 +1231,9 @@ textarea::placeholder {
 }
 .box-our-customers__style:hover, .box-our-customers__style:focus {
   border: 1px solid #2196F3;
-  height: 92px;
 }
 .box-our-customers__style:hover .icon, .box-our-customers__style:focus .icon {
   fill: var(--blue);
-  height: 92px;
 }
 
 .icon-customers {

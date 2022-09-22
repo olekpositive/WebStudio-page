@@ -329,7 +329,6 @@ picture {
     color: var(--grey);
     text-decoration: none;
     display: flex;
-    align-items: center;
     gap: 10px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,6 +678,8 @@ picture {
 .gallery-box__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-box__overlay {
   position: absolute;
